@@ -1,0 +1,53 @@
+现实项目里，数据结构和算法是“脑子里的东西”，不是一定要你手写在 C 里。
+
+真实世界怎么玩 DSA？
+
+在公司里基本是这样👇
+•	90% 时间：
+	用语言/库已经给你的现成结构
+•	C++ → std::vector, map, unordered_map
+•	Python → list, dict, set
+•	Java → ArrayList, HashMap
+•	你真正被考验的是：
+👉 知道该选哪一个
+👉 知道时间复杂度
+👉 别把 O(n²) 写进线上服务
+
+所以 DSA 更像是：
+
+内功，不是招式
+
+那 C 还有啥用？
+
+C = 底层 + 性能 + 控制权
+
+你会在这些场景用 C 手撸数据结构：
+•	操作系统（kernel、drivers）
+•	嵌入式 / IoT
+•	游戏引擎底层
+•	高性能网络（nginx、redis）
+•	自己写库 / runtime
+
+比如：
+•	malloc → 自己搞 free list（链表）
+•	网络 buffer → ring buffer
+•	cache → hash table + LRU
+
+👉 这些地方 C 很香
+
+普通业务项目？
+
+Web / App / 后端 👇
+•	几乎没人让你用 C 写链表红黑树
+•	更关心：
+•	API 设计
+•	可维护性
+•	稳定性
+•	选对数据结构就行
+
+给你一个现实公式
+
+DSA = 思维方式
+语言 = 工具
+C = 放大镜（让你看清本质）
+
